@@ -39,7 +39,9 @@ class PostConttroller extends Controller
     }
 
     public function create()
-    {
-        return view('create');
+
+
+    {   $categorie = Categories::orderBy('category', 'asc')->get();
+        return view('create',compact('categories'));
     }
 }

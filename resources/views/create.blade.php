@@ -15,10 +15,7 @@
         </div>
         <div class="field">
             <select name="categories">
-                <option value="1">Choisir une catégorie</option>
-                <option value="2">Choisir une catégorie</option>
-                <option value="3">Choisir une catégorie</option>
-                <option value="4">Choisir une catégorie</option>
+               @foreach()
             </select>
         </div>
         <button class="ui button" type="submit">Créer</button>
